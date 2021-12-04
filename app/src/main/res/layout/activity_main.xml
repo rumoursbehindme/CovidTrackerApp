@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COUNTRY NAME"
+       android:gravity="center"
+        android:textColor="#FFB300"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalCases"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Total Cases"
+        android:textColor="#F3DD2828"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCountryName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+    <TextView
+        android:id="@+id/tvRecoveredCases"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Recovered Cases"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCountryName"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalCases"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+    <TextView
+        android:id="@+id/tvcs"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="#F3DD2828"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalCases"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalCases"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalCases" />
+
+    <TextView
+        android:id="@+id/tvrc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecoveredCases"
+        app:layout_constraintStart_toStartOf="@+id/tvRecoveredCases"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecoveredCases" />
+
+
+</android.support.constraint.ConstraintLayout>
